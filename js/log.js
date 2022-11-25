@@ -5,7 +5,7 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "admin" && password == "janjachi"){
 alert ("Login successfully");
-window.location = "dashboard.html"; // Redirecting to other page.
+window.location = "dashboard-1.html"; // Redirecting to other page.
 return false;
 }
 else{
