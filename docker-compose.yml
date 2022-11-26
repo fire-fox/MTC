@@ -9,13 +9,13 @@ services:
       - ./www:/srv/www
       - ./default.conf:/etc/nginx/conf.d/default.conf
     networks:
-      - www
+      - proxy
   phpfpm:
     image: php:fpm-alpine
     volumes:
       - ./www:/srv/www
     networks:
-      - www
+      - proxy
 
 networks:
   www:
